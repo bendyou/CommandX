@@ -276,22 +276,6 @@ npm run lint
 
 ---
 
-## 👨‍💻 Автор
-
-**Your Name**
-
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-
----
-
-## 🙏 Благодарности
-
-- Django и Django REST Framework
-- React и Vite команды
-- Все контрибьюторы проекта
-
----
 
 <div align="center">
 
