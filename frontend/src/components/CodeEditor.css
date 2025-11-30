@@ -1,0 +1,64 @@
+.code-editor-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.code-editor-textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  font-family: 'Fira code', 'Fira Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 0;
+  background: transparent;
+  color: #333;
+  caret-color: #000;
+}
+
+.code-editor-pre {
+  margin: 0;
+  padding: 10px;
+  background: transparent !important;
+  font-family: 'Fira code', 'Fira Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Стили для темной темы (если нужно) */
+.code-editor-wrapper.dark {
+  background: #1e1e1e;
+  border-color: #444;
+}
+
+.code-editor-wrapper.dark .code-editor-textarea {
+  color: #d4d4d4;
+  caret-color: #fff;
+}
+
+/* Улучшенная прокрутка */
+.code-editor-wrapper ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.code-editor-wrapper ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.code-editor-wrapper ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.code-editor-wrapper ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+

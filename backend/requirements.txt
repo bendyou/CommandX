@@ -1,0 +1,24 @@
+# Django Core
+Django==5.0.7
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+django-cors-headers==4.4.0
+
+# Database
+dj-database-url==2.3.0
+# psycopg2-binary==2.9.9  # Опционально, только для PostgreSQL
+
+# SSH & System
+paramiko==3.5.0
+psutil>=5.9.0
+
+# AI Integration
+openai>=1.0.0
+
+# Utilities
+python-dotenv==1.0.1
+Pillow==12.0.0
+
+# Production Server
+gunicorn==22.0.0
+

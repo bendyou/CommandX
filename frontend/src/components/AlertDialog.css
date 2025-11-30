@@ -1,0 +1,153 @@
+.alert-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.alert-dialog {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 25px 70px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.alert-dialog-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.alert-dialog-icon.success {
+  filter: drop-shadow(0 0 10px rgba(74, 222, 128, 0.5));
+}
+
+.alert-dialog-icon.error {
+  filter: drop-shadow(0 0 10px rgba(255, 59, 48, 0.5));
+}
+
+.alert-dialog-icon.warning {
+  filter: drop-shadow(0 0 10px rgba(255, 193, 7, 0.5));
+}
+
+.alert-dialog-icon.info {
+  filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.5));
+}
+
+.alert-dialog-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.alert-dialog-message {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.alert-dialog-btn {
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  min-width: 120px;
+  color: white;
+}
+
+.alert-dialog-btn.success {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.4);
+}
+
+.alert-dialog-btn.success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(74, 222, 128, 0.5);
+}
+
+.alert-dialog-btn.error {
+  background: linear-gradient(135deg, #ff3b30 0%, #ff6b6b 100%);
+  box-shadow: 0 10px 30px rgba(255, 59, 48, 0.4);
+}
+
+.alert-dialog-btn.error:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(255, 59, 48, 0.5);
+}
+
+.alert-dialog-btn.warning {
+  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.4);
+}
+
+.alert-dialog-btn.warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(255, 193, 7, 0.5);
+}
+
+.alert-dialog-btn.info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.alert-dialog-btn.info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+}
+
+
+
+
+
